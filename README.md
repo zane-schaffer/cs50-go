@@ -1,6 +1,6 @@
 # cs50x-go
 
-cs50x problem sets solved in golang and packaged into a problem set binary.
+Harvard's [cs50x](https://cs50.harvard.edu/x/2021/) problem sets solved in golang and packaged into one tight package.
 
 ## setup
 
