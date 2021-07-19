@@ -3,24 +3,24 @@ package main
 import (
 	"fmt"
 
-	"github.com/zane-schaffer/cs50/programs"
+	"github.com/zane-schaffer/cs50/problems"
 	"github.com/zane-schaffer/cs50/utils"
 )
 
 func main() {
-	programList := []string{
+	problemList := []string{
 		"mario",
 		"cash",
 		"scrabble",
 		"readability",
 	}
-	runProgram(programList)
+	runProblem(problemList)
 }
 
-func runProgram(programList []string) {
+func runProblem(problemList []string) {
 	var input string
-	fmt.Println("Which program would you like to run?")
-	fmt.Println("Enter `ls` for all possible programs")
+	fmt.Println("Which problem would you like to run?")
+	fmt.Println("Enter `ls` for all possible problems")
 loop:
 	for {
 		input = utils.StringInput("")
@@ -28,26 +28,26 @@ loop:
 		case "ls":
 			fmt.Println("----------------")
 			fmt.Print("\n")
-			for _, v := range programList {
+			for _, v := range problemList {
 				fmt.Println(v)
 			}
 			fmt.Print("\n")
 			fmt.Println("----------------")
 			continue loop
 		case "mario":
-			programs.Mario()
+			problems.Mario()
 			break loop
 		case "cash":
-			programs.Cash()
+			problems.Cash()
 			break loop
 		case "scrabble":
-			programs.Scrabble()
+			problems.Scrabble()
 			break loop
 		case "readability":
-			programs.Readability()
+			problems.Readability()
 			break loop
 		default:
-			fmt.Printf("Program %s doesn't exist\n", input)
+			fmt.Printf("Problem %s doesn't exist\n", input)
 			continue loop
 		}
 	}

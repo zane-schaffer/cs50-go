@@ -11,6 +11,6 @@ Harvard's [cs50x](https://cs50.harvard.edu/x/2021/) problem sets solved in golan
     ./cs50
 ```
 
-`ls` for all programs available
+`ls` for all problems available
 
 Will be updating this as I solve more of the problems
